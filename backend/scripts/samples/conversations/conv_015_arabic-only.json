@@ -1,0 +1,21 @@
+{
+  "id": "arabic_only_15",
+  "category": "arabic_only",
+  "description": "Jordanian customer service conversation with minimal English",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:42:00+00:00",
+  "ended_at": "2024-01-15T09:47:00+00:00",
+  "metadata": {
+    "store_location": "الزرقاء",
+    "agent_name": "محمد",
+    "customer_type": "regular",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.78,
+    "audio_quality": "poor",
+    "english_percentage": 0.02,
+    "has_profanity": false,
+    "tone": "مربك"
+  },
+  "raw_text": "العميل: العميل: يلا بدك discount؟ السعر عالي بعض الشيء.\nالموظف: Well، للأسف السعر fixed مش قابل للتغيير.\nالعميل: شو هالمفهوم؟ أنا customer من زمان عندكم!\nالموظف: I understand، بس policy ما بدي تغيير.\nالعميل: ههه OK. إذن شغلة تانية، free delivery؟\nالموظف: Yes، هنالك free delivery إذا فوق 100 دينار."
+}

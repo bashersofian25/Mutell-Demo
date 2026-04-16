@@ -1,0 +1,141 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: mutell
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+    environment:
+      MP_SMTP_AUTH_ALLOW_INSECURE: true
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:8025 > /dev/null 2>&1 || exit 1"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
+  s3:
+    image: rustfs/rustfs:latest
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      RUSTFS_ROOT_USER: minioadmin
+      RUSTFS_ROOT_PASSWORD: minioadmin
+    volumes:
+      - s3data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "curl -s http://localhost:9000 > /dev/null 2>&1 || exit 1"]
+      interval: 3s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+  createbucket:
+    image: minio/mc:latest
+    depends_on:
+      s3:
+        condition: service_healthy
+    entrypoint: >
+      sh -c "
+        mc alias set local http://s3:9000 minioadmin minioadmin &&
+        mc mb --ignore-existing local/mutell-reports &&
+        mc anonymous set download local/mutell-reports
+      "
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      createbucket:
+        condition: service_completed_successfully
+    volumes:
+      - ./backend:/app
+    command: >
+      sh -c "alembic upgrade head &&
+             python -m scripts.seed &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+  worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      createbucket:
+        condition: service_completed_successfully
+    volumes:
+      - ./backend:/app
+    command: celery -A app.workers.celery_app:celery_app worker --loglevel=info --concurrency=2 -Q celery,evaluation,aggregation,report
+
+  beat:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      createbucket:
+        condition: service_completed_successfully
+    volumes:
+      - ./backend:/app
+    command: celery -A app.workers.celery_app:celery_app beat --loglevel=info
+
+  portal:
+    build:
+      context: .
+      dockerfile: portal/Dockerfile
+      args:
+        API_URL: http://api:8000
+    ports:
+      - "3000:3000"
+    environment:
+      - API_URL=http://api:8000
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  s3data:

@@ -1,0 +1,42 @@
+# API Configuration
+api:
+  base_url: "http://localhost:8000/api/v1"
+  timeout: 30
+  max_retries: 3
+  retry_backoff: 2  # seconds
+
+# Test Configuration
+test:
+  interval_seconds: 180  # 3 minutes between requests
+  continue_on_error: true
+  validate_responses: true
+  parallel_mode: true  # All terminals send same request simultaneously
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  console_output: true
+  json_logs: true
+  log_directory: "logs"
+
+# Terminal Configuration
+terminals:
+  file_path: "samples/terminals.md"
+  max_failures_per_terminal: 5
+
+# Conversation Configuration
+conversations:
+  directory: "samples/conversations"
+  categories:
+    - arabic_only
+    - mixed_language
+    - impolite
+    - unknown_items
+    - sst_format
+    - edge_cases
+
+# Report Configuration
+report:
+  output_directory: "logs"
+  include_charts: true
+  format: "html"

@@ -1,0 +1,21 @@
+{
+  "id": "arabic_only_4",
+  "category": "arabic_only",
+  "description": "Jordanian customer service conversation with minimal English",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:09:00+00:00",
+  "ended_at": "2024-01-15T09:14:00+00:00",
+  "metadata": {
+    "store_location": "عمان",
+    "agent_name": "أحمد",
+    "customer_type": "regular",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.85,
+    "audio_quality": "good",
+    "english_percentage": 0.05,
+    "has_profanity": false,
+    "tone": "عاجز"
+  },
+  "raw_text": "العميل: Hello، عندي problem مع order رقم 456.\nالموظف: Welcome يا عم! شو الموضوع؟\nالعميل: Product ما وصل لحد الآن. It's been 4 days!\nالموظف: Okay، خليني أشوف tracking للشحن.\nالعميل: Thanks يا باشa. هون service OK.\nالموظف: You're welcome. أي حاجة ثانية بخدمتك."
+}

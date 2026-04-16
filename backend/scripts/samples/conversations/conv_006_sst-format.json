@@ -1,0 +1,19 @@
+{
+  "id": "sst_format_6",
+  "category": "sst_format",
+  "description": "Speech-to-Text formatted Jordanian conversation",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:15:00+00:00",
+  "ended_at": "2024-01-15T09:20:00+00:00",
+  "metadata": {
+    "store_location": "الزرقاء",
+    "agent_name": "محمد",
+    "customer_type": "regular",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.78,
+    "audio_quality": "poor",
+    "word_count": 48
+  },
+  "raw_text": "مرحباً basically يا أحمد، عندي problem مع product\nWelcome يا عم! شو المشكلة؟\nproduct ما يعمل من أول ما اشتريته\nآسف، شو فيه بالضبط؟\nيلا يعني machine مش شغالة\nخليني أشوف لك بدل منه\nOK بس ده يفضل في Warranty؟\nYes، Warranty سنتين كاملة\nwalla؟ thank you يا أحمد"
+}

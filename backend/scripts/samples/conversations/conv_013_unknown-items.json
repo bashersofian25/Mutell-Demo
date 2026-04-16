@@ -1,0 +1,19 @@
+{
+  "id": "unknown_items_13",
+  "category": "unknown_items",
+  "description": "Customer asking for unavailable items",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:36:00+00:00",
+  "ended_at": "2024-01-15T09:41:00+00:00",
+  "metadata": {
+    "store_location": "عمان",
+    "agent_name": "أحمد",
+    "customer_type": "confused",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.85,
+    "audio_quality": "good",
+    "item_exists": false
+  },
+  "raw_text": "العميل: يلا في product من اليونان؟\nالموظف: آسف، بس عندينا products من دول عربية.\nالعميل: شو؟ مافي شيء من اليونان؟ Seriously?\nالموظف: للأسف، نعم. عندينا بدل منه products سورية.\nالعميل: This is not what I want!\nالموظف: آسف يا سيدي، ممكن شي آخر؟"
+}

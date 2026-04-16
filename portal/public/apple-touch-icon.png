@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <clipPath id="clip">
+      <circle cx="200" cy="200" r="148"/>
+    </clipPath>
+
+    <linearGradient id="bg" x1="0.15" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#28476e"/>
+      <stop offset="30%" stop-color="#1b3456"/>
+      <stop offset="65%" stop-color="#111f38"/>
+      <stop offset="100%" stop-color="#080e1a"/>
+    </linearGradient>
+
+    <radialGradient id="ambientLight" cx="32%" cy="32%" r="52%">
+      <stop offset="0%" stop-color="#4a82b8" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#2f5e8e" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#1a3858" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <radialGradient id="warmGlow" cx="55%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#d4a87c" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+
+    <radialGradient id="gloss" cx="36%" cy="28%" r="48%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.07"/>
+      <stop offset="60%" stop-color="#fff" stop-opacity="0.015"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadow" x="-15%" y="-10%" width="135%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="transparent"/>
+      <stop offset="88%" stop-color="#28476e" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#28476e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer halo -->
+  <circle cx="200" cy="200" r="180" fill="url(#halo)"/>
+
+  <!-- Main circle background -->
+  <circle cx="200" cy="200" r="156" fill="url(#bg)" filter="url(#shadow)"/>
+
+  <!-- Gradient overlays -->
+  <circle cx="200" cy="200" r="148" fill="url(#ambientLight)"/>
+  <circle cx="200" cy="200" r="148" fill="url(#warmGlow)"/>
+
+  <g clip-path="url(#clip)">
+    <!-- Primary mountain line -->
+    <path d="M45,170 Q118,154 170,165 Q222,176 260,157 Q310,138 355,166"
+          fill="none" stroke="#f5ece0" stroke-width="1.8" opacity="0.95"
+          stroke-linecap="round"/>
+
+    <!-- Secondary mountain line -->
+    <path d="M45,194 Q126,177 178,190 Q230,203 266,183 Q316,163 355,192"
+          fill="none" stroke="#d8b08a" stroke-width="1.1" opacity="0.55"
+          stroke-linecap="round"/>
+
+    <!-- Tertiary mountain line -->
+    <path d="M45,216 Q110,203 166,214 Q222,225 262,206 Q312,187 355,214"
+          fill="none" stroke="#c89e78" stroke-width="0.9" opacity="0.32"
+          stroke-linecap="round"/>
+
+    <!-- Quaternary mountain line -->
+    <path d="M45,238 Q118,226 170,236 Q222,246 264,228 Q314,210 355,236"
+          fill="none" stroke="#c89e78" stroke-width="0.7" opacity="0.16"
+          stroke-linecap="round"/>
+
+    <!-- Fifth mountain line -->
+    <path d="M45,258 Q126,246 174,256 Q222,266 262,248 Q314,230 355,256"
+          fill="none" stroke="#c89e78" stroke-width="0.5" opacity="0.07"
+          stroke-linecap="round"/>
+
+    <!-- Gloss overlay -->
+    <circle cx="200" cy="200" r="148" fill="url(#gloss)"/>
+  </g>
+</svg>

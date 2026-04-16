@@ -1,0 +1,21 @@
+{
+  "id": "arabic_only_17",
+  "category": "arabic_only",
+  "description": "Jordanian customer service conversation with minimal English",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:48:00+00:00",
+  "ended_at": "2024-01-15T09:53:00+00:00",
+  "metadata": {
+    "store_location": "إربد",
+    "agent_name": "فاطمة",
+    "customer_type": "regular",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.92,
+    "audio_quality": "average",
+    "english_percentage": 0.03,
+    "has_profanity": true,
+    "tone": "غاضب"
+  },
+  "raw_text": "العميل: شو هذا المنتج اللي عنكم؟ منيح شو؟ بس يلقاوه معطوب!\nالموظف: آسف يا سيدي، شو المشكلة بالضبط؟\nالعميل: شو المشكلة؟ المنتج ما يشتغل من أصله! OK؟\nالموظف: خليني أشوفلك بدل منو، جاري هنالك الأمر.\nالعميل: God Damn it! انتظرت ساعات!\nالموظف: آسف يا سيدي، هنالك شلون؟"
+}

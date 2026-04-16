@@ -1,0 +1,19 @@
+{
+  "id": "mixed_language_1",
+  "category": "mixed_language",
+  "description": "Mixed Jordanian Arabic/English conversation",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:00:00+00:00",
+  "ended_at": "2024-01-15T09:05:00+00:00",
+  "metadata": {
+    "store_location": "عمان",
+    "agent_name": "أحمد",
+    "customer_type": "tourist",
+    "language": "mixed_JO",
+    "format": "stt",
+    "confidence": 0.85,
+    "audio_quality": "good",
+    "english_percentage": 0.4
+  },
+  "raw_text": "Customer: Hello, I need help yaani.\nAgent: Welcome! How can I help you, ya habibi?\nCustomer: I'm looking for phone, Jordanian style.\nAgent: Yes, we have nice phones. What's your budget?\nCustomer: Around 500 dinar, shwaya expensive.\nAgent: Perfect! We have iPhone for this price."
+}

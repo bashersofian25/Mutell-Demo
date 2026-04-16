@@ -1,0 +1,19 @@
+{
+  "id": "edge_cases_20",
+  "category": "edge_cases",
+  "description": "Edge case conversation scenario",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:57:00+00:00",
+  "ended_at": "2024-01-15T10:02:00+00:00",
+  "metadata": {
+    "store_location": "إربد",
+    "agent_name": "فاطمة",
+    "customer_type": "silent",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.92,
+    "audio_quality": "average",
+    "edge_case_type": "confused"
+  },
+  "raw_text": "العميل: يا جماعة، عندي سؤال... شو هذا... product... walla؟\nالموظف: آسف، كيف يمكنني أساعدك يا سيدي؟\nالعميل: يعني أريد... product من جودة جيدة... بس price؟\nالموظف: عندي العديد products جودة ممتازة\nالعميل: OK شوف انت، أي product منيح؟"
+}

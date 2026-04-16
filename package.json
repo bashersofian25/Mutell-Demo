@@ -1,0 +1,7 @@
+{
+  "name": "mutell",
+  "private": true,
+  "workspaces": [
+    "portal"
+  ]
+}

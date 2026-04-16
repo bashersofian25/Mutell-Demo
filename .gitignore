@@ -1,0 +1,92 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.pyz
+**/.venv/
+**/venv/
+**/env/
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Next.js
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Yarn / PnP
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Vercel
+.vercel
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+ehthumbs.db
+
+# Docker
+pgdata/
+s3data/
+docker-compose.override.yml
+
+# Celery
+celerybeat-schedule
+celerybeat-schedule.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage/
+*.cover
+
+# Testing / Type checking
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# AI / Claude
+.claude/
+.cursor/
+.aider*
+.copilot/

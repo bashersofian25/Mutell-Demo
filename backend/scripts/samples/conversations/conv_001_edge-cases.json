@@ -1,0 +1,19 @@
+{
+  "id": "edge_cases_1",
+  "category": "edge_cases",
+  "description": "Edge case conversation scenario",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:00:00+00:00",
+  "ended_at": "2024-01-15T09:05:00+00:00",
+  "metadata": {
+    "store_location": "عمان",
+    "agent_name": "أحمد",
+    "customer_type": "confused",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.85,
+    "audio_quality": "good",
+    "edge_case_type": "short"
+  },
+  "raw_text": "العميل: مرحباً\nالموظف: مرحباً\nالعميل: باي"
+}

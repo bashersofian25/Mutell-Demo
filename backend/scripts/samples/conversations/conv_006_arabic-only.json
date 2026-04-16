@@ -1,0 +1,21 @@
+{
+  "id": "arabic_only_6",
+  "category": "arabic_only",
+  "description": "Jordanian customer service conversation with minimal English",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:15:00+00:00",
+  "ended_at": "2024-01-15T09:20:00+00:00",
+  "metadata": {
+    "store_location": "الزرقاء",
+    "agent_name": "محمد",
+    "customer_type": "regular",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.78,
+    "audio_quality": "poor",
+    "english_percentage": 0.02,
+    "has_profanity": false,
+    "tone": "لطيف"
+  },
+  "raw_text": "العميل: العميل: هذا product مش منيح الجودة! materials رديئة!\nالموظف: آسف لسماع ذلك. What's the issue exactly?\nالعميل: واللي بالداخل رخيص بس الظاهر good!\nالموظف: Okay، هل بدك exchange أو refund؟\nالعميل: Refund بدك! بس اللي عندكم مش منيح!\nالموظف: Yes، سأحل المشكلة من وراك."
+}

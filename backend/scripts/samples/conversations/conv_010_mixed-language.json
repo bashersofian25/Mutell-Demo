@@ -1,0 +1,19 @@
+{
+  "id": "mixed_language_10",
+  "category": "mixed_language",
+  "description": "Mixed Jordanian Arabic/English conversation",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:27:00+00:00",
+  "ended_at": "2024-01-15T09:32:00+00:00",
+  "metadata": {
+    "store_location": "عمان",
+    "agent_name": "أحمد",
+    "customer_type": "tourist",
+    "language": "mixed_JO",
+    "format": "stt",
+    "confidence": 0.85,
+    "audio_quality": "good",
+    "english_percentage": 0.4
+  },
+  "raw_text": "Customer: like Excuse me, I have problem with my order.\nAgent: Welcome sir, welcome. What's the issue?\nCustomer: The shipping is too slow, walla!\nAgent: I understand, sir. Give me 2 minutes.\nCustomer: OK, but make it fast, yaani.\nAgent: Yes, sir, thank you for your patience."
+}

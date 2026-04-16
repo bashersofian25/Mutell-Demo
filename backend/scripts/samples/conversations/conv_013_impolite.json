@@ -1,0 +1,21 @@
+{
+  "id": "impolite_13",
+  "category": "impolite",
+  "description": "Impolite Jordanian conversation with challenging behavior",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:36:00+00:00",
+  "ended_at": "2024-01-15T09:41:00+00:00",
+  "metadata": {
+    "store_location": "عمان",
+    "agent_name": "أحمد",
+    "customer_type": "challenging",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.85,
+    "audio_quality": "good",
+    "has_profanity": true,
+    "threat_level": "low",
+    "tone": "عادي"
+  },
+  "raw_text": "العميل: basically شو هذا؟ service عندكم sucks!\nالموظف: آسف يا سيدي، شو المشكلة؟\nالعميل: المشكلة أنكم بطئون! God Damn it!\nالموظف: آسف، خليني أحل المشكلة من وراك.\nالعميل: ما في عندي time! This is unacceptable!\nالموظف: Yes، سأحلها فوراً."
+}

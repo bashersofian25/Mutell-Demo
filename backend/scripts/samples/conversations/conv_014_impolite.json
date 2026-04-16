@@ -1,0 +1,21 @@
+{
+  "id": "impolite_14",
+  "category": "impolite",
+  "description": "Impolite Jordanian conversation with challenging behavior",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:39:00+00:00",
+  "ended_at": "2024-01-15T09:44:00+00:00",
+  "metadata": {
+    "store_location": "إربد",
+    "agent_name": "فاطمة",
+    "customer_type": "challenging",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.92,
+    "audio_quality": "average",
+    "has_profanity": true,
+    "threat_level": "medium",
+    "tone": "رسمي"
+  },
+  "raw_text": "العميل: أود أن أبلغ عن سوء الخدمة في متجركم!\nالموظف: آسف لسماع ذلك. كيف يمكنني مساعدتك؟\nالعميل: الخدمة لديكم سيئة جداً! Very bad service!\nالموظف: أفهم قلقكم. سأقدم شكواكم.\nالعميل: أريد إجراء فوري وcompensation!\nالموظف: Yes، سأحول الأمر للإدارة."
+}

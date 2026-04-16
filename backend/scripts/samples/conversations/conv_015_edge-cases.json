@@ -1,0 +1,19 @@
+{
+  "id": "edge_cases_15",
+  "category": "edge_cases",
+  "description": "Edge case conversation scenario",
+  "duration_minutes": 5,
+  "started_at": "2024-01-15T09:42:00+00:00",
+  "ended_at": "2024-01-15T09:47:00+00:00",
+  "metadata": {
+    "store_location": "الزرقاء",
+    "agent_name": "محمد",
+    "customer_type": "rambling",
+    "language": "ar_JO",
+    "format": "stt",
+    "confidence": 0.78,
+    "audio_quality": "poor",
+    "edge_case_type": "empty"
+  },
+  "raw_text": "العميل: ...\nالموظف: آلو؟ في أحد؟\nالعميل: ...\nالموظف: يا سيدي؟\nالعميل: نعم\nالموظف: كيف يمكنني مساعدتك؟\nالعميل: ..."
+}
